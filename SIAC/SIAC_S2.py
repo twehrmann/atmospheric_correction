@@ -4,6 +4,8 @@ import argparse
 import requests
 import warnings
 
+from SIAC.globals import EMU_URL
+
 warnings.filterwarnings("ignore")
 import numpy as np
 from glob import glob
@@ -24,7 +26,7 @@ def SIAC_S2(s2_t, send_back=False, mcd43=home + '/MCD43/', vrt_dir=home + '/MCD4
     if not os.path.exists(file_path + '/emus/'):
         os.mkdir(file_path + '/emus/')
     if len(glob(file_path + '/emus/' + 'isotropic_MSI_emulators_*_x?p_S2?.pkl')) < 12:
-        url = 'http://www2.geog.ucl.ac.uk/~ucfafyi/emus/'
+        url = EMU_URL
         req = requests.get(url)
         to_down = []
         for line in req.text.split():
