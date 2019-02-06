@@ -1,4 +1,6 @@
 import multiprocessing
+
+
 def fun(f, q_in, q_out):
     while True:
         i, x = q_in.get()

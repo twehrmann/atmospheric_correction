@@ -1,6 +1,8 @@
 import scipy.stats as stats
 from SIAC.lhd import lhd
-def create_training_set ( parameters, minvals, maxvals, n_train=200 ):
+
+
+def create_training_set(parameters, minvals, maxvals, n_train=200):
     """Creates a traning set for a set of parameters specified by 
     ``parameters`` (not actually used, but useful for debugging
     maybe). Parameters are assumed to be uniformly distributed
@@ -25,8 +27,8 @@ def create_training_set ( parameters, minvals, maxvals, n_train=200 ):
     """
 
     distributions = []
-    for i,p in enumerate(parameters):
-        distributions.append ( stats.uniform ( loc=minvals[i], \
-                            scale=(maxvals[i]-minvals[i] ) ) )
-    samples = lhd ( dist=distributions, size=n_train )
+    for i, p in enumerate(parameters):
+        distributions.append(stats.uniform(loc=minvals[i], \
+                                           scale=(maxvals[i] - minvals[i])))
+    samples = lhd(dist=distributions, size=n_train)
     return samples, distributions

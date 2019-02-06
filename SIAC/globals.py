@@ -1,0 +1,5 @@
+emus_dir = 'SIAC/emus/',
+mcd43_dir = '~/DATA/Multiply/MCD43/',
+global_dem = '/vsicurl/http://www2.geog.ucl.ac.uk/~ucfafyi/eles/global_dem.vrt',
+cams_dir = '/vsicurl/http://www2.geog.ucl.ac.uk/~ucfafyi/cams/',
+spec_m_dir = 'SIAC/spectral_mapping',
