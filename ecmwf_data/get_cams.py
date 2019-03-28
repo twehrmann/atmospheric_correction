@@ -7,7 +7,10 @@ from ecmwfapi import ECMWFDataServer
 server = ECMWFDataServer() 
 from datetime import datetime, timedelta
 
-TARGET_DIR = '/home/ucfafyi/net/cams'
+TARGET_DIR = os.environ.get("CAMS_DIR",'/extern/data/cams')
+
+if not os.path.isdir(TARGET_DIR):
+    os.mkdir(TARGET_DIR)
 os.chdir(TARGET_DIR)
 
 para_names = 'tcwv,gtco3,aod550,duaod550,omaod550,bcaod550,suaod550'.split(',')
