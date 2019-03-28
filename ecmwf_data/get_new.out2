@@ -1,0 +1,1808 @@
+nohup: ignoring input
+2019-01-21 17:02:11 ECMWF API python library 1.5.0
+2019-01-21 17:02:11 ECMWF API at http://apps.ecmwf.int/v1
+
+*** ECMWF API has moved
+***   OLD: http://apps.ecmwf.int/v1/
+***   NEW: https://apps.ecmwf.int/v1/
+*** Please update your ~/.ecmwfapirc file
+
+2019-01-21 17:02:11 Welcome Feng Yin
+2019-01-21 17:02:11 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:02:11 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:02:11 Request submitted
+2019-01-21 17:02:11 Request id: 5c45fb13cad519618cc74862
+2019-01-21 17:02:11 Request is submitted
+2019-01-21 17:02:12 Request is queued
+Calling 'nice mars /tmp/2e/3c/tmp-_marsEGoMWq.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.170525 - Welcome to MARS
+mars - INFO   - 20190121.170525 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.170525 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.170525 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.170525 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.170525 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.170525 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-01,type=fc,class=mcmars - INFO   - 20190121.170525 - Automatic split by date is on
+
+mars - INFO   - 20190121.170525 - Processing request 1
+mars - WARN   - 20190121.170525 - Area not compatible with grid
+mars - WARN   - 20190121.170525 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190101
+
+mars - INFO   - 20190121.170525 - Web API request id: 5c45fb13cad519618cc74862
+mars - INFO   - 20190121.170525 - Requesting 63 fields
+mars - INFO   - 20190121.170525 - Calling mars on 'marser', callback on 41964
+mars - INFO   - 20190121.170525 - Server task is 439 [marser]
+mars - INFO   - 20190121.170525 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr03 [marser]
+mars - INFO   - 20190121.170525 - Transfering 62806356 bytes
+mars - INFO   - 20190121.170528 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.170528 - 63 fields have been interpolated
+mars - INFO   - 20190121.170528 - Request time:  wall: 3 sec  cpu: 2 sec
+mars - INFO   - 20190121.170528 -   Read from network: 59.90 Mbyte(s) in < 1 sec [98.03 Mbyte/sec]
+mars - INFO   - 20190121.170528 -   Visiting marser: wall: 3 sec
+mars - INFO   - 20190121.170528 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.170528 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [516.47 Mbyte/sec]
+mars - INFO   - 20190121.170528 - Memory used: 50.16 Mbyte(s)
+mars - INFO   - 20190121.170528 - No errors reported
+Process '['nice', 'mars', '/tmp/2e/3c/tmp-_marsEGoMWq.req']' finished
+Calling 'nice grib_to_netcdf /data/data05/scratch/0b/46/_mars-atls14-98f536083ae965b31b0d04811be6f4c6-wBpasE.grib -o /data/data03/scratch/ff/f5/_grib2netcdf-atls12-98f536083ae965b31b0d04811be6f4c6-kVSk2J.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data05/scratch/0b/46/_mars-atls14-98f536083ae965b31b0d04811be6f4c6-wBpasE.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data03/scratch/ff/f5/_grib2netcdf-atls12-98f536083ae965b31b0d04811be6f4c6-kVSk2J.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data05/scratch/0b/46/_mars-atls14-98f536083ae965b31b0d04811be6f4c6-wBpasE.grib', '-o', '/data/data03/scratch/ff/f5/_grib2netcdf-atls12-98f536083ae965b31b0d04811be6f4c6-kVSk2J.nc', '-utime']' finished
+2019-01-21 17:05:43 Request is complete
+2019-01-21 17:05:43 Transfering 13.9058 Mbytes into 2019-01-01.nc
+2019-01-21 17:05:43 From https://stream.ecmwf.int/data/atls12/data/data03/scratch/ff/f5/_grib2netcdf-atls12-98f536083ae965b31b0d04811be6f4c6-kVSk2J.nc
+2019-01-21 17:05:54 Transfer rate 1.34277 Mbytes/s
+Translating NETCDF:"2019-01-01.nc":tcwv     to 2019_01_01_tcwv.tif    
+Translating NETCDF:"2019-01-01.nc":gtco3    to 2019_01_01_gtco3.tif   
+Translating NETCDF:"2019-01-01.nc":aod550   to 2019_01_01_aod550.tif  
+Translating NETCDF:"2019-01-01.nc":duaod550 to 2019_01_01_duaod550.tif
+Translating NETCDF:"2019-01-01.nc":omaod550 to 2019_01_01_omaod550.tif
+Translating NETCDF:"2019-01-01.nc":bcaod550 to 2019_01_01_bcaod550.tif
+Translating NETCDF:"2019-01-01.nc":suaod550 to 2019_01_01_suaod550.tif
+2019-01-21 17:05:56 ECMWF API python library 1.5.0
+2019-01-21 17:05:56 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:05:56 Welcome Feng Yin
+2019-01-21 17:05:56 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:05:56 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:05:56 Request submitted
+2019-01-21 17:05:56 Request id: 5c45fbf42fd81c2d1d979c5d
+2019-01-21 17:05:56 Request is submitted
+2019-01-21 17:06:02 Request is queued
+Calling 'nice mars /tmp/f7/34/tmp-_marsEPF6pY.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.170905 - Welcome to MARS
+mars - INFO   - 20190121.170905 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.170905 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.170905 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.170905 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.170905 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.170905 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-02,type=fc,class=mcmars - INFO   - 20190121.170905 - Automatic split by date is on
+
+mars - INFO   - 20190121.170905 - Processing request 1
+mars - WARN   - 20190121.170905 - Area not compatible with grid
+mars - WARN   - 20190121.170905 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190102
+
+mars - INFO   - 20190121.170905 - Web API request id: 5c45fbf42fd81c2d1d979c5d
+mars - INFO   - 20190121.170905 - Requesting 63 fields
+mars - INFO   - 20190121.170905 - Calling mars on 'marser', callback on 52826
+mars - INFO   - 20190121.170909 - Server task is 522 [marser]
+mars - INFO   - 20190121.170909 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr12 [marser]
+mars - INFO   - 20190121.170909 - Transfering 62806356 bytes
+mars - INFO   - 20190121.170913 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.170913 - 63 fields have been interpolated
+mars - INFO   - 20190121.170913 - Request time:  wall: 8 sec  cpu: 2 sec
+mars - INFO   - 20190121.170913 -   Read from network: 59.90 Mbyte(s) in < 1 sec [112.67 Mbyte/sec]
+mars - INFO   - 20190121.170913 -   Processing in marser: wall: 5 sec
+mars - INFO   - 20190121.170913 -   Visiting marser: wall: 8 sec
+mars - INFO   - 20190121.170913 -   Post-processing: wall: 3 sec cpu: 2 sec
+mars - INFO   - 20190121.170913 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [742.26 Mbyte/sec]
+mars - INFO   - 20190121.170913 - Memory used: 50.17 Mbyte(s)
+mars - INFO   - 20190121.170913 - No errors reported
+Process '['nice', 'mars', '/tmp/f7/34/tmp-_marsEPF6pY.req']' finished
+Calling 'nice grib_to_netcdf /data/data04/scratch/1b/ec/_mars-atls12-a562cefde8a29a7288fa0b8b7f9413f7-0DP9un.grib -o /data/data02/scratch/51/2f/_grib2netcdf-atls05-a82bacafb5c306db76464bc7e824bb75-ad9LLh.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data04/scratch/1b/ec/_mars-atls12-a562cefde8a29a7288fa0b8b7f9413f7-0DP9un.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data02/scratch/51/2f/_grib2netcdf-atls05-a82bacafb5c306db76464bc7e824bb75-ad9LLh.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data04/scratch/1b/ec/_mars-atls12-a562cefde8a29a7288fa0b8b7f9413f7-0DP9un.grib', '-o', '/data/data02/scratch/51/2f/_grib2netcdf-atls05-a82bacafb5c306db76464bc7e824bb75-ad9LLh.nc', '-utime']' finished
+2019-01-21 17:09:16 Request is complete
+2019-01-21 17:09:16 Transfering 13.9058 Mbytes into 2019-01-02.nc
+2019-01-21 17:09:16 From https://stream.ecmwf.int/data/atls05/data/data02/scratch/51/2f/_grib2netcdf-atls05-a82bacafb5c306db76464bc7e824bb75-ad9LLh.nc
+2019-01-21 17:09:21 Transfer rate 2.58862 Mbytes/s
+Translating NETCDF:"2019-01-02.nc":tcwv     to 2019_01_02_tcwv.tif    
+Translating NETCDF:"2019-01-02.nc":gtco3    to 2019_01_02_gtco3.tif   
+Translating NETCDF:"2019-01-02.nc":aod550   to 2019_01_02_aod550.tif  
+Translating NETCDF:"2019-01-02.nc":duaod550 to 2019_01_02_duaod550.tif
+Translating NETCDF:"2019-01-02.nc":omaod550 to 2019_01_02_omaod550.tif
+Translating NETCDF:"2019-01-02.nc":bcaod550 to 2019_01_02_bcaod550.tif
+Translating NETCDF:"2019-01-02.nc":suaod550 to 2019_01_02_suaod550.tif
+2019-01-21 17:09:23 ECMWF API python library 1.5.0
+2019-01-21 17:09:23 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:09:23 Welcome Feng Yin
+2019-01-21 17:09:23 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:09:23 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:09:23 Request submitted
+2019-01-21 17:09:23 Request id: 5c45fcc3bcd319730138a7f3
+2019-01-21 17:09:23 Request is submitted
+2019-01-21 17:09:24 Request is queued
+Calling 'nice mars /tmp/5a/76/tmp-_marsCvauor.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.171208 - Welcome to MARS
+mars - INFO   - 20190121.171208 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.171208 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.171208 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.171208 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.171208 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.171208 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-03,type=fc,class=mcmars - INFO   - 20190121.171208 - Automatic split by date is on
+
+mars - INFO   - 20190121.171208 - Processing request 1
+mars - WARN   - 20190121.171208 - Area not compatible with grid
+mars - WARN   - 20190121.171208 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190103
+
+mars - INFO   - 20190121.171208 - Web API request id: 5c45fcc3bcd319730138a7f3
+mars - INFO   - 20190121.171208 - Requesting 63 fields
+mars - INFO   - 20190121.171208 - Calling mars on 'marser', callback on 58934
+mars - INFO   - 20190121.171209 - Server task is 877 [marser]
+mars - INFO   - 20190121.171209 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr04 [marser]
+mars - INFO   - 20190121.171209 - Transfering 62806356 bytes
+mars - INFO   - 20190121.171213 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.171213 - 63 fields have been interpolated
+mars - INFO   - 20190121.171213 - Request time:  wall: 5 sec  cpu: 2 sec
+mars - INFO   - 20190121.171213 -   Read from network: 59.90 Mbyte(s) in 2 sec  [34.52 Mbyte/sec]
+mars - INFO   - 20190121.171213 -   Processing in marser: wall: 1 sec
+mars - INFO   - 20190121.171213 -   Visiting marser: wall: 5 sec
+mars - INFO   - 20190121.171213 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.171213 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [476.14 Mbyte/sec]
+mars - INFO   - 20190121.171213 - Memory used: 50.17 Mbyte(s)
+mars - INFO   - 20190121.171213 - No errors reported
+Process '['nice', 'mars', '/tmp/5a/76/tmp-_marsCvauor.req']' finished
+Calling 'nice grib_to_netcdf /data/data01/scratch/b6/f0/_mars-atls06-70e05f9f8ba4e9d19932f1c45a7be8d8-bHBzgI.grib -o /data/data01/scratch/36/d7/_grib2netcdf-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-0EgGy6.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data01/scratch/b6/f0/_mars-atls06-70e05f9f8ba4e9d19932f1c45a7be8d8-bHBzgI.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data01/scratch/36/d7/_grib2netcdf-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-0EgGy6.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data01/scratch/b6/f0/_mars-atls06-70e05f9f8ba4e9d19932f1c45a7be8d8-bHBzgI.grib', '-o', '/data/data01/scratch/36/d7/_grib2netcdf-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-0EgGy6.nc', '-utime']' finished
+2019-01-21 17:12:19 Request is complete
+2019-01-21 17:12:19 Transfering 13.9058 Mbytes into 2019-01-03.nc
+2019-01-21 17:12:19 From https://stream.ecmwf.int/data/atls04/data/data01/scratch/36/d7/_grib2netcdf-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-0EgGy6.nc
+2019-01-21 17:12:34 Transfer rate 924.434 Kbytes/s
+Translating NETCDF:"2019-01-03.nc":tcwv     to 2019_01_03_tcwv.tif    
+Translating NETCDF:"2019-01-03.nc":gtco3    to 2019_01_03_gtco3.tif   
+Translating NETCDF:"2019-01-03.nc":aod550   to 2019_01_03_aod550.tif  
+Translating NETCDF:"2019-01-03.nc":duaod550 to 2019_01_03_duaod550.tif
+Translating NETCDF:"2019-01-03.nc":omaod550 to 2019_01_03_omaod550.tif
+Translating NETCDF:"2019-01-03.nc":bcaod550 to 2019_01_03_bcaod550.tif
+Translating NETCDF:"2019-01-03.nc":suaod550 to 2019_01_03_suaod550.tif
+2019-01-21 17:12:36 ECMWF API python library 1.5.0
+2019-01-21 17:12:36 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:12:36 Welcome Feng Yin
+2019-01-21 17:12:37 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:12:37 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:12:37 Request submitted
+2019-01-21 17:12:37 Request id: 5c45fd852fd81c2d28979ce6
+2019-01-21 17:12:37 Request is submitted
+2019-01-21 17:12:43 Request is queued
+Calling 'nice mars /tmp/ed/a6/tmp-_marsnGaQnQ.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.171441 - Welcome to MARS
+mars - INFO   - 20190121.171441 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.171441 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.171441 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.171441 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.171441 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.171441 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-04,type=fc,class=mcmars - INFO   - 20190121.171441 - Automatic split by date is on
+
+mars - INFO   - 20190121.171441 - Processing request 1
+mars - WARN   - 20190121.171441 - Area not compatible with grid
+mars - WARN   - 20190121.171441 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190104
+
+mars - INFO   - 20190121.171441 - Web API request id: 5c45fd852fd81c2d28979ce6
+mars - INFO   - 20190121.171441 - Requesting 63 fields
+mars - INFO   - 20190121.171441 - Calling mars on 'marser', callback on 37746
+mars - INFO   - 20190121.171441 - Server task is 877 [marser]
+mars - INFO   - 20190121.171441 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr03 [marser]
+mars - INFO   - 20190121.171441 - Transfering 62806356 bytes
+mars - INFO   - 20190121.171444 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.171444 - 63 fields have been interpolated
+mars - INFO   - 20190121.171444 - Request time:  wall: 3 sec  cpu: 2 sec
+mars - INFO   - 20190121.171444 -   Read from network: 59.90 Mbyte(s) in < 1 sec [98.06 Mbyte/sec]
+mars - INFO   - 20190121.171444 -   Visiting marser: wall: 3 sec
+mars - INFO   - 20190121.171444 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.171444 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [618.57 Mbyte/sec]
+mars - INFO   - 20190121.171444 - Memory used: 50.17 Mbyte(s)
+mars - INFO   - 20190121.171444 - No errors reported
+Process '['nice', 'mars', '/tmp/ed/a6/tmp-_marsnGaQnQ.req']' finished
+Calling 'nice grib_to_netcdf /data/data04/scratch/7e/35/_mars-atls04-a562cefde8a29a7288fa0b8b7f9413f7-3MWqO7.grib -o /data/data02/scratch/da/99/_grib2netcdf-atls04-a82bacafb5c306db76464bc7e824bb75-ebEy29.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data04/scratch/7e/35/_mars-atls04-a562cefde8a29a7288fa0b8b7f9413f7-3MWqO7.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data02/scratch/da/99/_grib2netcdf-atls04-a82bacafb5c306db76464bc7e824bb75-ebEy29.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data04/scratch/7e/35/_mars-atls04-a562cefde8a29a7288fa0b8b7f9413f7-3MWqO7.grib', '-o', '/data/data02/scratch/da/99/_grib2netcdf-atls04-a82bacafb5c306db76464bc7e824bb75-ebEy29.nc', '-utime']' finished
+2019-01-21 17:14:47 Request is complete
+2019-01-21 17:14:47 Transfering 13.9058 Mbytes into 2019-01-04.nc
+2019-01-21 17:14:47 From https://stream.ecmwf.int/data/atls04/data/data02/scratch/da/99/_grib2netcdf-atls04-a82bacafb5c306db76464bc7e824bb75-ebEy29.nc
+2019-01-21 17:15:09 Transfer rate 664.267 Kbytes/s
+Translating NETCDF:"2019-01-04.nc":tcwv     to 2019_01_04_tcwv.tif    
+Translating NETCDF:"2019-01-04.nc":gtco3    to 2019_01_04_gtco3.tif   
+Translating NETCDF:"2019-01-04.nc":aod550   to 2019_01_04_aod550.tif  
+Translating NETCDF:"2019-01-04.nc":duaod550 to 2019_01_04_duaod550.tif
+Translating NETCDF:"2019-01-04.nc":omaod550 to 2019_01_04_omaod550.tif
+Translating NETCDF:"2019-01-04.nc":bcaod550 to 2019_01_04_bcaod550.tif
+Translating NETCDF:"2019-01-04.nc":suaod550 to 2019_01_04_suaod550.tif
+2019-01-21 17:15:11 ECMWF API python library 1.5.0
+2019-01-21 17:15:11 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:15:11 Welcome Feng Yin
+2019-01-21 17:15:11 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:15:11 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:15:11 Request submitted
+2019-01-21 17:15:11 Request id: 5c45fe1fc8ca1981aa105da5
+2019-01-21 17:15:11 Request is submitted
+2019-01-21 17:15:13 Request is queued
+Calling 'nice mars /tmp/0e/8b/tmp-_mars1qTJma.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.171727 - Welcome to MARS
+mars - INFO   - 20190121.171727 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.171727 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.171727 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.171727 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.171727 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.171727 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-05,type=fc,class=mcmars - INFO   - 20190121.171727 - Automatic split by date is on
+
+mars - INFO   - 20190121.171727 - Processing request 1
+mars - WARN   - 20190121.171727 - Area not compatible with grid
+mars - WARN   - 20190121.171727 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190105
+
+mars - INFO   - 20190121.171727 - Web API request id: 5c45fe1fc8ca1981aa105da5
+mars - INFO   - 20190121.171727 - Requesting 63 fields
+mars - INFO   - 20190121.171727 - Calling mars on 'marser', callback on 34196
+2019-01-21 17:17:28 Request is active
+mars - INFO   - 20190121.171728 - Server task is 395 [marser]
+mars - INFO   - 20190121.171728 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr12 [marser]
+mars - INFO   - 20190121.171728 - Transfering 62806356 bytes
+mars - INFO   - 20190121.171732 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.171732 - 63 fields have been interpolated
+mars - INFO   - 20190121.171732 - Request time:  wall: 5 sec  cpu: 2 sec
+mars - INFO   - 20190121.171732 -   Read from network: 59.90 Mbyte(s) in 1 sec  [57.71 Mbyte/sec]
+mars - INFO   - 20190121.171732 -   Processing in marser: wall: 1 sec
+mars - INFO   - 20190121.171732 -   Visiting marser: wall: 5 sec
+mars - INFO   - 20190121.171732 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.171732 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [415.41 Mbyte/sec]
+mars - INFO   - 20190121.171732 - Memory used: 50.16 Mbyte(s)
+mars - INFO   - 20190121.171732 - No errors reported
+Process '['nice', 'mars', '/tmp/0e/8b/tmp-_mars1qTJma.req']' finished
+Calling 'nice grib_to_netcdf /data/data03/scratch/d3/d3/_mars-atls06-98f536083ae965b31b0d04811be6f4c6-pcJnO4.grib -o /data/data04/scratch/86/2d/_grib2netcdf-atls06-a562cefde8a29a7288fa0b8b7f9413f7-tmFwdO.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data03/scratch/d3/d3/_mars-atls06-98f536083ae965b31b0d04811be6f4c6-pcJnO4.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data04/scratch/86/2d/_grib2netcdf-atls06-a562cefde8a29a7288fa0b8b7f9413f7-tmFwdO.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data03/scratch/d3/d3/_mars-atls06-98f536083ae965b31b0d04811be6f4c6-pcJnO4.grib', '-o', '/data/data04/scratch/86/2d/_grib2netcdf-atls06-a562cefde8a29a7288fa0b8b7f9413f7-tmFwdO.nc', '-utime']' finished
+2019-01-21 17:17:38 Request is complete
+2019-01-21 17:17:38 Transfering 13.9058 Mbytes into 2019-01-05.nc
+2019-01-21 17:17:38 From https://stream.ecmwf.int/data/atls06/data/data04/scratch/86/2d/_grib2netcdf-atls06-a562cefde8a29a7288fa0b8b7f9413f7-tmFwdO.nc
+2019-01-21 17:17:43 Transfer rate 2.58555 Mbytes/s
+Translating NETCDF:"2019-01-05.nc":tcwv     to 2019_01_05_tcwv.tif    
+Translating NETCDF:"2019-01-05.nc":gtco3    to 2019_01_05_gtco3.tif   
+Translating NETCDF:"2019-01-05.nc":aod550   to 2019_01_05_aod550.tif  
+Translating NETCDF:"2019-01-05.nc":duaod550 to 2019_01_05_duaod550.tif
+Translating NETCDF:"2019-01-05.nc":omaod550 to 2019_01_05_omaod550.tif
+Translating NETCDF:"2019-01-05.nc":bcaod550 to 2019_01_05_bcaod550.tif
+Translating NETCDF:"2019-01-05.nc":suaod550 to 2019_01_05_suaod550.tif
+2019-01-21 17:17:45 ECMWF API python library 1.5.0
+2019-01-21 17:17:45 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:17:45 Welcome Feng Yin
+2019-01-21 17:17:45 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:17:45 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:17:45 Request submitted
+2019-01-21 17:17:45 Request id: 5c45feb9bbd91cb89a446211
+2019-01-21 17:17:45 Request is submitted
+2019-01-21 17:17:47 Request is queued
+Calling 'nice mars /tmp/c9/12/tmp-_marsOjKrVe.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.172043 - Welcome to MARS
+mars - INFO   - 20190121.172043 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.172043 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.172043 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.172043 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.172043 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.172043 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-06,type=fc,class=mcmars - INFO   - 20190121.172043 - Automatic split by date is on
+
+mars - INFO   - 20190121.172043 - Processing request 1
+mars - WARN   - 20190121.172043 - Area not compatible with grid
+mars - WARN   - 20190121.172043 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190106
+
+mars - INFO   - 20190121.172043 - Web API request id: 5c45feb9bbd91cb89a446211
+mars - INFO   - 20190121.172044 - Requesting 63 fields
+mars - INFO   - 20190121.172044 - Calling mars on 'marser', callback on 54647
+mars - INFO   - 20190121.172046 - Server task is 251 [marser]
+mars - INFO   - 20190121.172046 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr12 [marser]
+mars - INFO   - 20190121.172046 - Transfering 62806356 bytes
+2019-01-21 17:20:48 Request is active
+mars - INFO   - 20190121.172049 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.172049 - 63 fields have been interpolated
+mars - INFO   - 20190121.172049 - Request time:  wall: 5 sec  cpu: 2 sec
+mars - INFO   - 20190121.172049 -   Read from network: 59.90 Mbyte(s) in < 1 sec [96.63 Mbyte/sec]
+mars - INFO   - 20190121.172049 -   Processing in marser: wall: 2 sec
+mars - INFO   - 20190121.172049 -   Visiting marser: wall: 5 sec
+mars - INFO   - 20190121.172049 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.172049 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [578.96 Mbyte/sec]
+mars - INFO   - 20190121.172049 - Memory used: 50.17 Mbyte(s)
+mars - INFO   - 20190121.172049 - No errors reported
+Process '['nice', 'mars', '/tmp/c9/12/tmp-_marsOjKrVe.req']' finished
+Calling 'nice grib_to_netcdf /data/data01/scratch/27/61/_mars-atls05-a562cefde8a29a7288fa0b8b7f9413f7-iyu8EB.grib -o /data/data01/scratch/04/7b/_grib2netcdf-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-vjN93f.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data01/scratch/27/61/_mars-atls05-a562cefde8a29a7288fa0b8b7f9413f7-iyu8EB.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data01/scratch/04/7b/_grib2netcdf-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-vjN93f.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data01/scratch/27/61/_mars-atls05-a562cefde8a29a7288fa0b8b7f9413f7-iyu8EB.grib', '-o', '/data/data01/scratch/04/7b/_grib2netcdf-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-vjN93f.nc', '-utime']' finished
+2019-01-21 17:20:53 Request is complete
+2019-01-21 17:20:53 Transfering 13.9058 Mbytes into 2019-01-06.nc
+2019-01-21 17:20:53 From https://stream.ecmwf.int/data/atls04/data/data01/scratch/04/7b/_grib2netcdf-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-vjN93f.nc
+2019-01-21 17:20:59 Transfer rate 2.1344 Mbytes/s
+Translating NETCDF:"2019-01-06.nc":tcwv     to 2019_01_06_tcwv.tif    
+Translating NETCDF:"2019-01-06.nc":gtco3    to 2019_01_06_gtco3.tif   
+Translating NETCDF:"2019-01-06.nc":aod550   to 2019_01_06_aod550.tif  
+Translating NETCDF:"2019-01-06.nc":duaod550 to 2019_01_06_duaod550.tif
+Translating NETCDF:"2019-01-06.nc":omaod550 to 2019_01_06_omaod550.tif
+Translating NETCDF:"2019-01-06.nc":bcaod550 to 2019_01_06_bcaod550.tif
+Translating NETCDF:"2019-01-06.nc":suaod550 to 2019_01_06_suaod550.tif
+2019-01-21 17:21:01 ECMWF API python library 1.5.0
+2019-01-21 17:21:01 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:21:01 Welcome Feng Yin
+2019-01-21 17:21:01 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:21:01 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:21:02 Request submitted
+2019-01-21 17:21:02 Request id: 5c45ff7ecad519617fc74875
+2019-01-21 17:21:02 Request is submitted
+2019-01-21 17:21:06 Request is queued
+Calling 'nice mars /tmp/3f/bd/tmp-_marsGGZGtg.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.172241 - Welcome to MARS
+mars - INFO   - 20190121.172241 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.172241 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.172241 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.172241 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.172241 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.172241 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-07,type=fc,class=mcmars - INFO   - 20190121.172241 - Automatic split by date is on
+
+mars - INFO   - 20190121.172241 - Processing request 1
+mars - WARN   - 20190121.172241 - Area not compatible with grid
+mars - WARN   - 20190121.172241 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190107
+
+mars - INFO   - 20190121.172241 - Web API request id: 5c45ff7ecad519617fc74875
+mars - INFO   - 20190121.172241 - Requesting 63 fields
+mars - INFO   - 20190121.172241 - Calling mars on 'marser', callback on 59591
+2019-01-21 17:22:41 Request is active
+mars - INFO   - 20190121.172246 - Server task is 377 [marser]
+mars - INFO   - 20190121.172246 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr06 [marser]
+mars - INFO   - 20190121.172246 - Transfering 62806356 bytes
+mars - INFO   - 20190121.172249 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.172249 - 63 fields have been interpolated
+mars - INFO   - 20190121.172249 - Request time:  wall: 9 sec  cpu: 2 sec
+mars - INFO   - 20190121.172249 -   Read from network: 59.90 Mbyte(s) in 2 sec  [36.96 Mbyte/sec]
+mars - INFO   - 20190121.172249 -   Processing in marser: wall: 5 sec
+mars - INFO   - 20190121.172249 -   Visiting marser: wall: 9 sec
+mars - INFO   - 20190121.172249 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.172249 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [732.08 Mbyte/sec]
+mars - INFO   - 20190121.172249 - Memory used: 50.17 Mbyte(s)
+mars - INFO   - 20190121.172249 - No errors reported
+Process '['nice', 'mars', '/tmp/3f/bd/tmp-_marsGGZGtg.req']' finished
+Calling 'nice grib_to_netcdf /data/data01/scratch/73/8f/_mars-atls12-a562cefde8a29a7288fa0b8b7f9413f7-NQooPe.grib -o /data/data02/scratch/15/d5/_grib2netcdf-atls04-a82bacafb5c306db76464bc7e824bb75-wZpdR6.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data01/scratch/73/8f/_mars-atls12-a562cefde8a29a7288fa0b8b7f9413f7-NQooPe.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data02/scratch/15/d5/_grib2netcdf-atls04-a82bacafb5c306db76464bc7e824bb75-wZpdR6.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data01/scratch/73/8f/_mars-atls12-a562cefde8a29a7288fa0b8b7f9413f7-NQooPe.grib', '-o', '/data/data02/scratch/15/d5/_grib2netcdf-atls04-a82bacafb5c306db76464bc7e824bb75-wZpdR6.nc', '-utime']' finished
+2019-01-21 17:22:52 Request is complete
+2019-01-21 17:22:52 Transfering 13.9058 Mbytes into 2019-01-07.nc
+2019-01-21 17:22:52 From https://stream.ecmwf.int/data/atls04/data/data02/scratch/15/d5/_grib2netcdf-atls04-a82bacafb5c306db76464bc7e824bb75-wZpdR6.nc
+2019-01-21 17:23:04 Transfer rate 1.12313 Mbytes/s
+Translating NETCDF:"2019-01-07.nc":tcwv     to 2019_01_07_tcwv.tif    
+Translating NETCDF:"2019-01-07.nc":gtco3    to 2019_01_07_gtco3.tif   
+Translating NETCDF:"2019-01-07.nc":aod550   to 2019_01_07_aod550.tif  
+Translating NETCDF:"2019-01-07.nc":duaod550 to 2019_01_07_duaod550.tif
+Translating NETCDF:"2019-01-07.nc":omaod550 to 2019_01_07_omaod550.tif
+Translating NETCDF:"2019-01-07.nc":bcaod550 to 2019_01_07_bcaod550.tif
+Translating NETCDF:"2019-01-07.nc":suaod550 to 2019_01_07_suaod550.tif
+2019-01-21 17:23:06 ECMWF API python library 1.5.0
+2019-01-21 17:23:06 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:23:06 Welcome Feng Yin
+2019-01-21 17:23:06 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:23:06 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:23:06 Request submitted
+2019-01-21 17:23:06 Request id: 5c45fffac8ca1981be105d80
+2019-01-21 17:23:06 Request is submitted
+2019-01-21 17:23:07 Request is queued
+Calling 'nice mars /tmp/e6/55/tmp-_mars3lobTP.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.172455 - Welcome to MARS
+mars - INFO   - 20190121.172455 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.172455 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.172455 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.172455 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.172455 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.172455 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-08,type=fc,class=mcmars - INFO   - 20190121.172455 - Automatic split by date is on
+
+mars - INFO   - 20190121.172455 - Processing request 1
+mars - WARN   - 20190121.172455 - Area not compatible with grid
+mars - WARN   - 20190121.172455 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190108
+
+mars - INFO   - 20190121.172455 - Web API request id: 5c45fffac8ca1981be105d80
+mars - INFO   - 20190121.172455 - Requesting 63 fields
+mars - INFO   - 20190121.172455 - Calling mars on 'marser', callback on 57156
+mars - INFO   - 20190121.172456 - Server task is 186 [marser]
+mars - INFO   - 20190121.172456 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr06 [marser]
+mars - INFO   - 20190121.172456 - Transfering 62806356 bytes
+mars - INFO   - 20190121.172459 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.172459 - 63 fields have been interpolated
+mars - INFO   - 20190121.172459 - Request time:  wall: 5 sec  cpu: 2 sec
+mars - INFO   - 20190121.172459 -   Read from network: 59.90 Mbyte(s) in < 1 sec [108.12 Mbyte/sec]
+mars - INFO   - 20190121.172459 -   Processing in marser: wall: 2 sec
+mars - INFO   - 20190121.172459 -   Visiting marser: wall: 5 sec
+mars - INFO   - 20190121.172459 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.172459 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [452.61 Mbyte/sec]
+mars - INFO   - 20190121.172459 - Memory used: 50.17 Mbyte(s)
+mars - INFO   - 20190121.172459 - No errors reported
+Process '['nice', 'mars', '/tmp/e6/55/tmp-_mars3lobTP.req']' finished
+Calling 'nice grib_to_netcdf /data/data03/scratch/72/44/_mars-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-tG9ZLv.grib -o /data/data03/scratch/0b/58/_grib2netcdf-atls05-98f536083ae965b31b0d04811be6f4c6-cJIgQz.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data03/scratch/72/44/_mars-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-tG9ZLv.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data03/scratch/0b/58/_grib2netcdf-atls05-98f536083ae965b31b0d04811be6f4c6-cJIgQz.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data03/scratch/72/44/_mars-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-tG9ZLv.grib', '-o', '/data/data03/scratch/0b/58/_grib2netcdf-atls05-98f536083ae965b31b0d04811be6f4c6-cJIgQz.nc', '-utime']' finished
+2019-01-21 17:25:06 Request is complete
+2019-01-21 17:25:06 Transfering 13.9058 Mbytes into 2019-01-08.nc
+2019-01-21 17:25:06 From https://stream.ecmwf.int/data/atls05/data/data03/scratch/0b/58/_grib2netcdf-atls05-98f536083ae965b31b0d04811be6f4c6-cJIgQz.nc
+2019-01-21 17:25:20 Transfer rate 988.364 Kbytes/s
+Translating NETCDF:"2019-01-08.nc":tcwv     to 2019_01_08_tcwv.tif    
+Translating NETCDF:"2019-01-08.nc":gtco3    to 2019_01_08_gtco3.tif   
+Translating NETCDF:"2019-01-08.nc":aod550   to 2019_01_08_aod550.tif  
+Translating NETCDF:"2019-01-08.nc":duaod550 to 2019_01_08_duaod550.tif
+Translating NETCDF:"2019-01-08.nc":omaod550 to 2019_01_08_omaod550.tif
+Translating NETCDF:"2019-01-08.nc":bcaod550 to 2019_01_08_bcaod550.tif
+Translating NETCDF:"2019-01-08.nc":suaod550 to 2019_01_08_suaod550.tif
+2019-01-21 17:25:22 ECMWF API python library 1.5.0
+2019-01-21 17:25:22 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:25:22 Welcome Feng Yin
+2019-01-21 17:25:23 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:25:23 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:25:23 Request submitted
+2019-01-21 17:25:23 Request id: 5c460083cad51961a5c74808
+2019-01-21 17:25:23 Request is submitted
+2019-01-21 17:25:24 Request is queued
+Calling 'nice mars /tmp/8a/12/tmp-_mars3dhPF6.req'
+2019-01-21 17:26:29 Request is active
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.172629 - Welcome to MARS
+mars - INFO   - 20190121.172629 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.172629 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.172629 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.172629 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.172629 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.172629 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-09,type=fc,class=mcmars - INFO   - 20190121.172629 - Automatic split by date is on
+
+mars - INFO   - 20190121.172629 - Processing request 1
+mars - WARN   - 20190121.172629 - Area not compatible with grid
+mars - WARN   - 20190121.172629 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190109
+
+mars - INFO   - 20190121.172629 - Web API request id: 5c460083cad51961a5c74808
+mars - INFO   - 20190121.172629 - Requesting 63 fields
+mars - INFO   - 20190121.172629 - Calling mars on 'marser', callback on 50310
+mars - INFO   - 20190121.172633 - Server task is 225 [marser]
+mars - INFO   - 20190121.172633 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr12 [marser]
+mars - INFO   - 20190121.172633 - Transfering 62806356 bytes
+mars - INFO   - 20190121.172635 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.172635 - 63 fields have been interpolated
+mars - INFO   - 20190121.172635 - Request time:  wall: 7 sec  cpu: 2 sec
+mars - INFO   - 20190121.172635 -   Read from network: 59.90 Mbyte(s) in < 1 sec [93.39 Mbyte/sec]
+mars - INFO   - 20190121.172635 -   Processing in marser: wall: 4 sec
+mars - INFO   - 20190121.172635 -   Visiting marser: wall: 7 sec
+mars - INFO   - 20190121.172635 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.172635 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [544.33 Mbyte/sec]
+mars - INFO   - 20190121.172635 - Memory used: 50.17 Mbyte(s)
+mars - INFO   - 20190121.172635 - No errors reported
+Process '['nice', 'mars', '/tmp/8a/12/tmp-_mars3dhPF6.req']' finished
+Calling 'nice grib_to_netcdf /data/data02/scratch/20/2f/_mars-atls06-a82bacafb5c306db76464bc7e824bb75-KN7WWl.grib -o /data/data05/scratch/a4/80/_grib2netcdf-atls06-70e05f9f8ba4e9d19932f1c45a7be8d8-ZnJX6l.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data02/scratch/20/2f/_mars-atls06-a82bacafb5c306db76464bc7e824bb75-KN7WWl.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data05/scratch/a4/80/_grib2netcdf-atls06-70e05f9f8ba4e9d19932f1c45a7be8d8-ZnJX6l.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data02/scratch/20/2f/_mars-atls06-a82bacafb5c306db76464bc7e824bb75-KN7WWl.grib', '-o', '/data/data05/scratch/a4/80/_grib2netcdf-atls06-70e05f9f8ba4e9d19932f1c45a7be8d8-ZnJX6l.nc', '-utime']' finished
+2019-01-21 17:26:39 Request is complete
+2019-01-21 17:26:39 Transfering 13.9058 Mbytes into 2019-01-09.nc
+2019-01-21 17:26:39 From https://stream.ecmwf.int/data/atls06/data/data05/scratch/a4/80/_grib2netcdf-atls06-70e05f9f8ba4e9d19932f1c45a7be8d8-ZnJX6l.nc
+2019-01-21 17:26:44 Transfer rate 2.57348 Mbytes/s
+Translating NETCDF:"2019-01-09.nc":tcwv     to 2019_01_09_tcwv.tif    
+Translating NETCDF:"2019-01-09.nc":gtco3    to 2019_01_09_gtco3.tif   
+Translating NETCDF:"2019-01-09.nc":aod550   to 2019_01_09_aod550.tif  
+Translating NETCDF:"2019-01-09.nc":duaod550 to 2019_01_09_duaod550.tif
+Translating NETCDF:"2019-01-09.nc":omaod550 to 2019_01_09_omaod550.tif
+Translating NETCDF:"2019-01-09.nc":bcaod550 to 2019_01_09_bcaod550.tif
+Translating NETCDF:"2019-01-09.nc":suaod550 to 2019_01_09_suaod550.tif
+2019-01-21 17:26:46 ECMWF API python library 1.5.0
+2019-01-21 17:26:46 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:26:46 Welcome Feng Yin
+2019-01-21 17:26:46 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:26:46 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:26:47 Request submitted
+2019-01-21 17:26:47 Request id: 5c4600d7bcd319730138a7f4
+2019-01-21 17:26:47 Request is submitted
+2019-01-21 17:26:48 Request is queued
+Calling 'nice mars /tmp/a2/06/tmp-_marsBvTPP6.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.172824 - Welcome to MARS
+mars - INFO   - 20190121.172824 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.172824 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.172824 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.172824 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.172824 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.172824 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-10,type=fc,class=mcmars - INFO   - 20190121.172824 - Automatic split by date is on
+
+mars - INFO   - 20190121.172824 - Processing request 1
+mars - WARN   - 20190121.172824 - Area not compatible with grid
+mars - WARN   - 20190121.172824 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190110
+
+mars - INFO   - 20190121.172824 - Web API request id: 5c4600d7bcd319730138a7f4
+mars - INFO   - 20190121.172824 - Requesting 63 fields
+mars - INFO   - 20190121.172824 - Calling mars on 'marser', callback on 47934
+mars - INFO   - 20190121.172824 - Server task is 13 [marser]
+mars - INFO   - 20190121.172824 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr12 [marser]
+mars - INFO   - 20190121.172824 - Transfering 62806356 bytes
+2019-01-21 17:28:25 Request is active
+mars - INFO   - 20190121.172828 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.172828 - 63 fields have been interpolated
+mars - INFO   - 20190121.172828 - Request time:  wall: 3 sec  cpu: 2 sec
+mars - INFO   - 20190121.172828 -   Read from network: 59.90 Mbyte(s) in 1 sec  [53.45 Mbyte/sec]
+mars - INFO   - 20190121.172828 -   Visiting marser: wall: 3 sec
+mars - INFO   - 20190121.172828 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.172828 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [466.53 Mbyte/sec]
+mars - INFO   - 20190121.172828 - Memory used: 50.17 Mbyte(s)
+mars - INFO   - 20190121.172828 - No errors reported
+Process '['nice', 'mars', '/tmp/a2/06/tmp-_marsBvTPP6.req']' finished
+Calling 'nice grib_to_netcdf /data/data05/scratch/e1/33/_mars-atls06-a82bacafb5c306db76464bc7e824bb75-xnKaHV.grib -o /data/data05/scratch/ac/52/_grib2netcdf-atls14-70e05f9f8ba4e9d19932f1c45a7be8d8-lsv0bo.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data05/scratch/e1/33/_mars-atls06-a82bacafb5c306db76464bc7e824bb75-xnKaHV.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data05/scratch/ac/52/_grib2netcdf-atls14-70e05f9f8ba4e9d19932f1c45a7be8d8-lsv0bo.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data05/scratch/e1/33/_mars-atls06-a82bacafb5c306db76464bc7e824bb75-xnKaHV.grib', '-o', '/data/data05/scratch/ac/52/_grib2netcdf-atls14-70e05f9f8ba4e9d19932f1c45a7be8d8-lsv0bo.nc', '-utime']' finished
+2019-01-21 17:28:30 Request is complete
+2019-01-21 17:28:30 Transfering 13.9058 Mbytes into 2019-01-10.nc
+2019-01-21 17:28:30 From https://stream.ecmwf.int/data/atls14/data/data05/scratch/ac/52/_grib2netcdf-atls14-70e05f9f8ba4e9d19932f1c45a7be8d8-lsv0bo.nc
+2019-01-21 17:28:34 Transfer rate 3.16386 Mbytes/s
+Translating NETCDF:"2019-01-10.nc":tcwv     to 2019_01_10_tcwv.tif    
+Translating NETCDF:"2019-01-10.nc":gtco3    to 2019_01_10_gtco3.tif   
+Translating NETCDF:"2019-01-10.nc":aod550   to 2019_01_10_aod550.tif  
+Translating NETCDF:"2019-01-10.nc":duaod550 to 2019_01_10_duaod550.tif
+Translating NETCDF:"2019-01-10.nc":omaod550 to 2019_01_10_omaod550.tif
+Translating NETCDF:"2019-01-10.nc":bcaod550 to 2019_01_10_bcaod550.tif
+Translating NETCDF:"2019-01-10.nc":suaod550 to 2019_01_10_suaod550.tif
+2019-01-21 17:28:37 ECMWF API python library 1.5.0
+2019-01-21 17:28:37 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:28:37 Welcome Feng Yin
+2019-01-21 17:28:38 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:28:38 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:28:38 Request submitted
+2019-01-21 17:28:38 Request id: 5c460146c7db1cbdd44cb8a1
+2019-01-21 17:28:38 Request is submitted
+2019-01-21 17:28:39 Request is queued
+Calling 'nice mars /tmp/ff/db/tmp-_marsWyQXf5.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.173032 - Welcome to MARS
+mars - INFO   - 20190121.173032 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.173032 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.173032 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.173032 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.173032 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.173032 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-11,type=fc,class=mcmars - INFO   - 20190121.173032 - Automatic split by date is on
+
+mars - INFO   - 20190121.173032 - Processing request 1
+mars - WARN   - 20190121.173032 - Area not compatible with grid
+mars - WARN   - 20190121.173032 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190111
+
+mars - INFO   - 20190121.173032 - Web API request id: 5c460146c7db1cbdd44cb8a1
+mars - INFO   - 20190121.173033 - Requesting 63 fields
+mars - INFO   - 20190121.173033 - Calling mars on 'marser', callback on 59830
+mars - INFO   - 20190121.173033 - Server task is 42 [marser]
+mars - INFO   - 20190121.173033 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr12 [marser]
+mars - INFO   - 20190121.173033 - Transfering 62806356 bytes
+mars - INFO   - 20190121.173035 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.173035 - 63 fields have been interpolated
+mars - INFO   - 20190121.173035 - Request time:  wall: 3 sec  cpu: 2 sec
+mars - INFO   - 20190121.173035 -   Read from network: 59.90 Mbyte(s) in < 1 sec [76.88 Mbyte/sec]
+mars - INFO   - 20190121.173035 -   Visiting marser: wall: 3 sec
+mars - INFO   - 20190121.173035 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.173035 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [736.18 Mbyte/sec]
+mars - INFO   - 20190121.173035 - Memory used: 50.17 Mbyte(s)
+mars - INFO   - 20190121.173035 - No errors reported
+Process '['nice', 'mars', '/tmp/ff/db/tmp-_marsWyQXf5.req']' finished
+Calling 'nice grib_to_netcdf /data/data01/scratch/3b/c3/_mars-atls12-70e05f9f8ba4e9d19932f1c45a7be8d8-mZjeSX.grib -o /data/data01/scratch/64/36/_grib2netcdf-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-EBpZxT.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data01/scratch/3b/c3/_mars-atls12-70e05f9f8ba4e9d19932f1c45a7be8d8-mZjeSX.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data01/scratch/64/36/_grib2netcdf-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-EBpZxT.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data01/scratch/3b/c3/_mars-atls12-70e05f9f8ba4e9d19932f1c45a7be8d8-mZjeSX.grib', '-o', '/data/data01/scratch/64/36/_grib2netcdf-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-EBpZxT.nc', '-utime']' finished
+2019-01-21 17:30:37 Request is complete
+2019-01-21 17:30:37 Transfering 13.9058 Mbytes into 2019-01-11.nc
+2019-01-21 17:30:37 From https://stream.ecmwf.int/data/atls04/data/data01/scratch/64/36/_grib2netcdf-atls04-95e2cf679cd58ee9b4db4dd119a05a8d-EBpZxT.nc
+2019-01-21 17:30:45 Transfer rate 1.86784 Mbytes/s
+Translating NETCDF:"2019-01-11.nc":tcwv     to 2019_01_11_tcwv.tif    
+Translating NETCDF:"2019-01-11.nc":gtco3    to 2019_01_11_gtco3.tif   
+Translating NETCDF:"2019-01-11.nc":aod550   to 2019_01_11_aod550.tif  
+Translating NETCDF:"2019-01-11.nc":duaod550 to 2019_01_11_duaod550.tif
+Translating NETCDF:"2019-01-11.nc":omaod550 to 2019_01_11_omaod550.tif
+Translating NETCDF:"2019-01-11.nc":bcaod550 to 2019_01_11_bcaod550.tif
+Translating NETCDF:"2019-01-11.nc":suaod550 to 2019_01_11_suaod550.tif
+2019-01-21 17:30:46 ECMWF API python library 1.5.0
+2019-01-21 17:30:46 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:30:46 Welcome Feng Yin
+2019-01-21 17:30:47 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:30:47 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:30:47 Request submitted
+2019-01-21 17:30:47 Request id: 5c4601c72fd81c2d1e979ca4
+2019-01-21 17:30:47 Request is submitted
+2019-01-21 17:30:48 Request is queued
+Calling 'nice mars /tmp/ff/50/tmp-_marsAVMvV9.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.173256 - Welcome to MARS
+mars - INFO   - 20190121.173256 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.173256 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.173256 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.173256 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.173256 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.173256 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-12,type=fc,class=mcmars - INFO   - 20190121.173256 - Automatic split by date is on
+
+mars - INFO   - 20190121.173256 - Processing request 1
+mars - WARN   - 20190121.173256 - Area not compatible with grid
+mars - WARN   - 20190121.173256 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190112
+
+mars - INFO   - 20190121.173256 - Web API request id: 5c4601c72fd81c2d1e979ca4
+mars - INFO   - 20190121.173256 - Requesting 63 fields
+mars - INFO   - 20190121.173256 - Calling mars on 'marser', callback on 41785
+2019-01-21 17:32:59 Request is active
+mars - INFO   - 20190121.173259 - Server task is 195 [marser]
+mars - INFO   - 20190121.173259 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr05 [marser]
+mars - INFO   - 20190121.173259 - Transfering 62806356 bytes
+mars - INFO   - 20190121.173303 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.173303 - 63 fields have been interpolated
+mars - INFO   - 20190121.173303 - Request time:  wall: 7 sec  cpu: 3 sec
+mars - INFO   - 20190121.173303 -   Read from network: 59.90 Mbyte(s) in 1 sec  [52.58 Mbyte/sec]
+mars - INFO   - 20190121.173303 -   Processing in marser: wall: 3 sec
+mars - INFO   - 20190121.173303 -   Visiting marser: wall: 7 sec
+mars - INFO   - 20190121.173303 -   Post-processing: wall: 3 sec cpu: 3 sec
+mars - INFO   - 20190121.173303 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [324.44 Mbyte/sec]
+mars - INFO   - 20190121.173303 - Memory used: 50.16 Mbyte(s)
+mars - INFO   - 20190121.173303 - No errors reported
+Process '['nice', 'mars', '/tmp/ff/50/tmp-_marsAVMvV9.req']' finished
+Calling 'nice grib_to_netcdf /data/data01/scratch/64/d7/_mars-atls06-95e2cf679cd58ee9b4db4dd119a05a8d-Kds22t.grib -o /data/data02/scratch/01/3b/_grib2netcdf-atls06-a82bacafb5c306db76464bc7e824bb75-mauqHf.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data01/scratch/64/d7/_mars-atls06-95e2cf679cd58ee9b4db4dd119a05a8d-Kds22t.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data02/scratch/01/3b/_grib2netcdf-atls06-a82bacafb5c306db76464bc7e824bb75-mauqHf.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data01/scratch/64/d7/_mars-atls06-95e2cf679cd58ee9b4db4dd119a05a8d-Kds22t.grib', '-o', '/data/data02/scratch/01/3b/_grib2netcdf-atls06-a82bacafb5c306db76464bc7e824bb75-mauqHf.nc', '-utime']' finished
+2019-01-21 17:33:09 Request is complete
+2019-01-21 17:33:09 Transfering 13.9058 Mbytes into 2019-01-12.nc
+2019-01-21 17:33:09 From https://stream.ecmwf.int/data/atls06/data/data02/scratch/01/3b/_grib2netcdf-atls06-a82bacafb5c306db76464bc7e824bb75-mauqHf.nc
+2019-01-21 17:33:24 Transfer rate 988.316 Kbytes/s
+Translating NETCDF:"2019-01-12.nc":tcwv     to 2019_01_12_tcwv.tif    
+Translating NETCDF:"2019-01-12.nc":gtco3    to 2019_01_12_gtco3.tif   
+Translating NETCDF:"2019-01-12.nc":aod550   to 2019_01_12_aod550.tif  
+Translating NETCDF:"2019-01-12.nc":duaod550 to 2019_01_12_duaod550.tif
+Translating NETCDF:"2019-01-12.nc":omaod550 to 2019_01_12_omaod550.tif
+Translating NETCDF:"2019-01-12.nc":bcaod550 to 2019_01_12_bcaod550.tif
+Translating NETCDF:"2019-01-12.nc":suaod550 to 2019_01_12_suaod550.tif
+2019-01-21 17:33:25 ECMWF API python library 1.5.0
+2019-01-21 17:33:25 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:33:26 Welcome Feng Yin
+2019-01-21 17:33:26 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:33:26 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:33:26 Request submitted
+2019-01-21 17:33:26 Request id: 5c4602662fd81c2d25979c91
+2019-01-21 17:33:26 Request is submitted
+2019-01-21 17:33:27 Request is queued
+Calling 'nice mars /tmp/74/8f/tmp-_marsPl3Yqh.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.173434 - Welcome to MARS
+mars - INFO   - 20190121.173434 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.173434 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.173434 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.173434 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.173434 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.173434 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-13,type=fc,class=mcmars - INFO   - 20190121.173434 - Automatic split by date is on
+
+mars - INFO   - 20190121.173434 - Processing request 1
+mars - WARN   - 20190121.173434 - Area not compatible with grid
+mars - WARN   - 20190121.173434 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190113
+
+mars - INFO   - 20190121.173434 - Web API request id: 5c4602662fd81c2d25979c91
+mars - INFO   - 20190121.173434 - Requesting 63 fields
+mars - INFO   - 20190121.173434 - Calling mars on 'marser', callback on 58315
+mars - INFO   - 20190121.173434 - Server task is 522 [marser]
+mars - INFO   - 20190121.173434 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr06 [marser]
+mars - INFO   - 20190121.173434 - Transfering 62806356 bytes
+2019-01-21 17:34:36 Request is active
+mars - INFO   - 20190121.173437 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.173437 - 63 fields have been interpolated
+mars - INFO   - 20190121.173437 - Request time:  wall: 3 sec  cpu: 2 sec
+mars - INFO   - 20190121.173437 -   Read from network: 59.90 Mbyte(s) in 1 sec  [43.52 Mbyte/sec]
+mars - INFO   - 20190121.173437 -   Visiting marser: wall: 3 sec
+mars - INFO   - 20190121.173437 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.173437 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [515.83 Mbyte/sec]
+mars - INFO   - 20190121.173437 - Memory used: 50.16 Mbyte(s)
+mars - INFO   - 20190121.173437 - No errors reported
+Process '['nice', 'mars', '/tmp/74/8f/tmp-_marsPl3Yqh.req']' finished
+Calling 'nice grib_to_netcdf /data/data03/scratch/d5/8b/_mars-atls12-a562cefde8a29a7288fa0b8b7f9413f7-MFtKXJ.grib -o /data/data03/scratch/22/0d/_grib2netcdf-atls13-98f536083ae965b31b0d04811be6f4c6-VA0ZUM.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data03/scratch/d5/8b/_mars-atls12-a562cefde8a29a7288fa0b8b7f9413f7-MFtKXJ.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data03/scratch/22/0d/_grib2netcdf-atls13-98f536083ae965b31b0d04811be6f4c6-VA0ZUM.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data03/scratch/d5/8b/_mars-atls12-a562cefde8a29a7288fa0b8b7f9413f7-MFtKXJ.grib', '-o', '/data/data03/scratch/22/0d/_grib2netcdf-atls13-98f536083ae965b31b0d04811be6f4c6-VA0ZUM.nc', '-utime']' finished
+2019-01-21 17:34:41 Request is complete
+2019-01-21 17:34:41 Transfering 13.9058 Mbytes into 2019-01-13.nc
+2019-01-21 17:34:41 From https://stream.ecmwf.int/data/atls13/data/data03/scratch/22/0d/_grib2netcdf-atls13-98f536083ae965b31b0d04811be6f4c6-VA0ZUM.nc
+2019-01-21 17:34:45 Transfer rate 4.13673 Mbytes/s
+Translating NETCDF:"2019-01-13.nc":tcwv     to 2019_01_13_tcwv.tif    
+Translating NETCDF:"2019-01-13.nc":gtco3    to 2019_01_13_gtco3.tif   
+Translating NETCDF:"2019-01-13.nc":aod550   to 2019_01_13_aod550.tif  
+Translating NETCDF:"2019-01-13.nc":duaod550 to 2019_01_13_duaod550.tif
+Translating NETCDF:"2019-01-13.nc":omaod550 to 2019_01_13_omaod550.tif
+Translating NETCDF:"2019-01-13.nc":bcaod550 to 2019_01_13_bcaod550.tif
+Translating NETCDF:"2019-01-13.nc":suaod550 to 2019_01_13_suaod550.tif
+2019-01-21 17:34:46 ECMWF API python library 1.5.0
+2019-01-21 17:34:46 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:34:47 Welcome Feng Yin
+2019-01-21 17:34:47 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:34:47 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:34:47 Request submitted
+2019-01-21 17:34:47 Request id: 5c4602b7bcd31972f938a7bf
+2019-01-21 17:34:47 Request is submitted
+2019-01-21 17:34:48 Request is queued
+Calling 'nice mars /tmp/b9/c1/tmp-_marsLBsC6W.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.173546 - Welcome to MARS
+mars - INFO   - 20190121.173546 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.173546 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.173546 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.173546 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.173546 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.173546 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-14,type=fc,class=mcmars - INFO   - 20190121.173547 - Automatic split by date is on
+
+mars - INFO   - 20190121.173547 - Processing request 1
+mars - WARN   - 20190121.173547 - Area not compatible with grid
+mars - WARN   - 20190121.173547 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190114
+
+2019-01-21 17:35:47 Request is active
+mars - INFO   - 20190121.173547 - Web API request id: 5c4602b7bcd31972f938a7bf
+mars - INFO   - 20190121.173547 - Requesting 63 fields
+mars - INFO   - 20190121.173547 - Calling mars on 'marser', callback on 55644
+mars - INFO   - 20190121.173547 - Server task is 882 [marser]
+mars - INFO   - 20190121.173547 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr12 [marser]
+mars - INFO   - 20190121.173547 - Transfering 62806356 bytes
+mars - INFO   - 20190121.173550 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.173550 - 63 fields have been interpolated
+mars - INFO   - 20190121.173550 - Request time:  wall: 3 sec  cpu: 2 sec
+mars - INFO   - 20190121.173550 -   Read from network: 59.90 Mbyte(s) in < 1 sec [102.71 Mbyte/sec]
+mars - INFO   - 20190121.173550 -   Visiting marser: wall: 3 sec
+mars - INFO   - 20190121.173550 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.173550 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [534.63 Mbyte/sec]
+mars - INFO   - 20190121.173550 - Memory used: 50.17 Mbyte(s)
+mars - INFO   - 20190121.173550 - No errors reported
+Process '['nice', 'mars', '/tmp/b9/c1/tmp-_marsLBsC6W.req']' finished
+Calling 'nice grib_to_netcdf /data/data05/scratch/a3/e2/_mars-atls04-70e05f9f8ba4e9d19932f1c45a7be8d8-ONbQl3.grib -o /data/data02/scratch/cd/1d/_grib2netcdf-atls13-a82bacafb5c306db76464bc7e824bb75-o33ZRh.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data05/scratch/a3/e2/_mars-atls04-70e05f9f8ba4e9d19932f1c45a7be8d8-ONbQl3.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data02/scratch/cd/1d/_grib2netcdf-atls13-a82bacafb5c306db76464bc7e824bb75-o33ZRh.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data05/scratch/a3/e2/_mars-atls04-70e05f9f8ba4e9d19932f1c45a7be8d8-ONbQl3.grib', '-o', '/data/data02/scratch/cd/1d/_grib2netcdf-atls13-a82bacafb5c306db76464bc7e824bb75-o33ZRh.nc', '-utime']' finished
+2019-01-21 17:35:57 Request is complete
+2019-01-21 17:35:57 Transfering 13.9058 Mbytes into 2019-01-14.nc
+2019-01-21 17:35:57 From https://stream.ecmwf.int/data/atls13/data/data02/scratch/cd/1d/_grib2netcdf-atls13-a82bacafb5c306db76464bc7e824bb75-o33ZRh.nc
+2019-01-21 17:36:03 Transfer rate 2.51639 Mbytes/s
+Translating NETCDF:"2019-01-14.nc":tcwv     to 2019_01_14_tcwv.tif    
+Translating NETCDF:"2019-01-14.nc":gtco3    to 2019_01_14_gtco3.tif   
+Translating NETCDF:"2019-01-14.nc":aod550   to 2019_01_14_aod550.tif  
+Translating NETCDF:"2019-01-14.nc":duaod550 to 2019_01_14_duaod550.tif
+Translating NETCDF:"2019-01-14.nc":omaod550 to 2019_01_14_omaod550.tif
+Translating NETCDF:"2019-01-14.nc":bcaod550 to 2019_01_14_bcaod550.tif
+Translating NETCDF:"2019-01-14.nc":suaod550 to 2019_01_14_suaod550.tif
+2019-01-21 17:36:04 ECMWF API python library 1.5.0
+2019-01-21 17:36:04 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:36:05 Welcome Feng Yin
+2019-01-21 17:36:05 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:36:05 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:36:05 Request submitted
+2019-01-21 17:36:05 Request id: 5c460305bbd91cb8b24461a9
+2019-01-21 17:36:05 Request is submitted
+2019-01-21 17:36:07 Request is queued
+Calling 'nice mars /tmp/50/ee/tmp-_marsebQiUi.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.173654 - Welcome to MARS
+mars - INFO   - 20190121.173654 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.173654 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.173654 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.173654 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.173654 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.173654 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-15,type=fc,class=mcmars - INFO   - 20190121.173654 - Automatic split by date is on
+
+mars - INFO   - 20190121.173654 - Processing request 1
+mars - WARN   - 20190121.173654 - Area not compatible with grid
+mars - WARN   - 20190121.173654 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190115
+
+mars - INFO   - 20190121.173654 - Web API request id: 5c460305bbd91cb8b24461a9
+mars - INFO   - 20190121.173654 - Requesting 63 fields
+mars - INFO   - 20190121.173655 - Calling mars on 'marser', callback on 40207
+mars - INFO   - 20190121.173655 - Server task is 186 [marser]
+mars - INFO   - 20190121.173655 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20190121.173655 - Transfering 62806356 bytes
+2019-01-21 17:36:55 Request is active
+mars - INFO   - 20190121.173658 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.173658 - 63 fields have been interpolated
+mars - INFO   - 20190121.173658 - Request time:  wall: 3 sec  cpu: 2 sec
+mars - INFO   - 20190121.173658 -   Read from network: 59.90 Mbyte(s) in < 1 sec [69.80 Mbyte/sec]
+mars - INFO   - 20190121.173658 -   Visiting marser: wall: 3 sec
+mars - INFO   - 20190121.173658 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.173658 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [618.19 Mbyte/sec]
+mars - INFO   - 20190121.173658 - Memory used: 50.17 Mbyte(s)
+mars - INFO   - 20190121.173658 - No errors reported
+Process '['nice', 'mars', '/tmp/50/ee/tmp-_marsebQiUi.req']' finished
+Calling 'nice grib_to_netcdf /data/data02/scratch/da/3e/_mars-atls06-a562cefde8a29a7288fa0b8b7f9413f7-ZeQY6m.grib -o /data/data03/scratch/54/53/_grib2netcdf-atls14-98f536083ae965b31b0d04811be6f4c6-yLvtKv.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data02/scratch/da/3e/_mars-atls06-a562cefde8a29a7288fa0b8b7f9413f7-ZeQY6m.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data03/scratch/54/53/_grib2netcdf-atls14-98f536083ae965b31b0d04811be6f4c6-yLvtKv.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data02/scratch/da/3e/_mars-atls06-a562cefde8a29a7288fa0b8b7f9413f7-ZeQY6m.grib', '-o', '/data/data03/scratch/54/53/_grib2netcdf-atls14-98f536083ae965b31b0d04811be6f4c6-yLvtKv.nc', '-utime']' finished
+2019-01-21 17:37:00 Request is complete
+2019-01-21 17:37:00 Transfering 13.9058 Mbytes into 2019-01-15.nc
+2019-01-21 17:37:00 From https://stream.ecmwf.int/data/atls14/data/data03/scratch/54/53/_grib2netcdf-atls14-98f536083ae965b31b0d04811be6f4c6-yLvtKv.nc
+2019-01-21 17:37:02 Transfer rate 5.41505 Mbytes/s
+Translating NETCDF:"2019-01-15.nc":tcwv     to 2019_01_15_tcwv.tif    
+Translating NETCDF:"2019-01-15.nc":gtco3    to 2019_01_15_gtco3.tif   
+Translating NETCDF:"2019-01-15.nc":aod550   to 2019_01_15_aod550.tif  
+Translating NETCDF:"2019-01-15.nc":duaod550 to 2019_01_15_duaod550.tif
+Translating NETCDF:"2019-01-15.nc":omaod550 to 2019_01_15_omaod550.tif
+Translating NETCDF:"2019-01-15.nc":bcaod550 to 2019_01_15_bcaod550.tif
+Translating NETCDF:"2019-01-15.nc":suaod550 to 2019_01_15_suaod550.tif
+2019-01-21 17:37:04 ECMWF API python library 1.5.0
+2019-01-21 17:37:04 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:37:04 Welcome Feng Yin
+2019-01-21 17:37:04 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:37:04 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:37:04 Request submitted
+2019-01-21 17:37:04 Request id: 5c4603402fd81c2d1c979cb7
+2019-01-21 17:37:04 Request is submitted
+2019-01-21 17:37:06 Request is queued
+Calling 'nice mars /tmp/40/ec/tmp-_marsAeeXLG.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.173750 - Welcome to MARS
+mars - INFO   - 20190121.173750 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.173750 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.173750 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.173750 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.173750 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.173750 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-16,type=fc,class=mcmars - INFO   - 20190121.173750 - Automatic split by date is on
+
+mars - INFO   - 20190121.173750 - Processing request 1
+mars - WARN   - 20190121.173750 - Area not compatible with grid
+mars - WARN   - 20190121.173750 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190116
+
+mars - INFO   - 20190121.173750 - Web API request id: 5c4603402fd81c2d1c979cb7
+mars - INFO   - 20190121.173750 - Requesting 63 fields
+mars - INFO   - 20190121.173750 - Calling mars on 'marser', callback on 42565
+mars - INFO   - 20190121.173750 - Server task is 103 [marser]
+mars - INFO   - 20190121.173750 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr05 [marser]
+mars - INFO   - 20190121.173750 - Transfering 62806356 bytes
+2019-01-21 17:37:52 Request is active
+mars - INFO   - 20190121.173753 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.173753 - 63 fields have been interpolated
+mars - INFO   - 20190121.173753 - Request time:  wall: 3 sec  cpu: 2 sec
+mars - INFO   - 20190121.173753 -   Read from network: 59.90 Mbyte(s) in 1 sec  [57.19 Mbyte/sec]
+mars - INFO   - 20190121.173753 -   Visiting marser: wall: 3 sec
+mars - INFO   - 20190121.173753 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.173753 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [692.38 Mbyte/sec]
+mars - INFO   - 20190121.173753 - Memory used: 50.16 Mbyte(s)
+mars - INFO   - 20190121.173753 - No errors reported
+Process '['nice', 'mars', '/tmp/40/ec/tmp-_marsAeeXLG.req']' finished
+Calling 'nice grib_to_netcdf /data/data05/scratch/6a/3a/_mars-atls06-95e2cf679cd58ee9b4db4dd119a05a8d-M01m0N.grib -o /data/data04/scratch/a7/7d/_grib2netcdf-atls14-a562cefde8a29a7288fa0b8b7f9413f7-m1Fl2h.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data05/scratch/6a/3a/_mars-atls06-95e2cf679cd58ee9b4db4dd119a05a8d-M01m0N.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data04/scratch/a7/7d/_grib2netcdf-atls14-a562cefde8a29a7288fa0b8b7f9413f7-m1Fl2h.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data05/scratch/6a/3a/_mars-atls06-95e2cf679cd58ee9b4db4dd119a05a8d-M01m0N.grib', '-o', '/data/data04/scratch/a7/7d/_grib2netcdf-atls14-a562cefde8a29a7288fa0b8b7f9413f7-m1Fl2h.nc', '-utime']' finished
+2019-01-21 17:37:58 Request is complete
+2019-01-21 17:37:58 Transfering 13.9058 Mbytes into 2019-01-16.nc
+2019-01-21 17:37:58 From https://stream.ecmwf.int/data/atls14/data/data04/scratch/a7/7d/_grib2netcdf-atls14-a562cefde8a29a7288fa0b8b7f9413f7-m1Fl2h.nc
+2019-01-21 17:38:07 Transfer rate 1.47805 Mbytes/s
+Translating NETCDF:"2019-01-16.nc":tcwv     to 2019_01_16_tcwv.tif    
+Translating NETCDF:"2019-01-16.nc":gtco3    to 2019_01_16_gtco3.tif   
+Translating NETCDF:"2019-01-16.nc":aod550   to 2019_01_16_aod550.tif  
+Translating NETCDF:"2019-01-16.nc":duaod550 to 2019_01_16_duaod550.tif
+Translating NETCDF:"2019-01-16.nc":omaod550 to 2019_01_16_omaod550.tif
+Translating NETCDF:"2019-01-16.nc":bcaod550 to 2019_01_16_bcaod550.tif
+Translating NETCDF:"2019-01-16.nc":suaod550 to 2019_01_16_suaod550.tif
+2019-01-21 17:38:10 ECMWF API python library 1.5.0
+2019-01-21 17:38:10 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:38:10 Welcome Feng Yin
+2019-01-21 17:38:10 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:38:10 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:38:11 Request submitted
+2019-01-21 17:38:11 Request id: 5c460383bbd91cb8a3446245
+2019-01-21 17:38:11 Request is submitted
+2019-01-21 17:38:12 Request is queued
+Calling 'nice mars /tmp/24/96/tmp-_marsyezEKp.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.173853 - Welcome to MARS
+mars - INFO   - 20190121.173853 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.173853 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.173853 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.173853 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.173853 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.173853 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-17,type=fc,class=mcmars - INFO   - 20190121.173853 - Automatic split by date is on
+
+mars - INFO   - 20190121.173853 - Processing request 1
+mars - WARN   - 20190121.173853 - Area not compatible with grid
+mars - WARN   - 20190121.173853 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190117
+
+mars - INFO   - 20190121.173853 - Web API request id: 5c460383bbd91cb8a3446245
+mars - INFO   - 20190121.173853 - Requesting 63 fields
+mars - INFO   - 20190121.173853 - Calling mars on 'marser', callback on 33052
+mars - INFO   - 20190121.173853 - Server task is 256 [marser]
+mars - INFO   - 20190121.173853 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr01 [marser]
+mars - INFO   - 20190121.173853 - Transfering 62806356 bytes
+mars - INFO   - 20190121.173856 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.173856 - 63 fields have been interpolated
+mars - INFO   - 20190121.173856 - Request time:  wall: 3 sec  cpu: 2 sec
+mars - INFO   - 20190121.173856 -   Read from network: 59.90 Mbyte(s) in < 1 sec [120.13 Mbyte/sec]
+mars - INFO   - 20190121.173856 -   Visiting marser: wall: 3 sec
+mars - INFO   - 20190121.173856 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.173856 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [762.08 Mbyte/sec]
+mars - INFO   - 20190121.173856 - Memory used: 50.16 Mbyte(s)
+mars - INFO   - 20190121.173856 - No errors reported
+Process '['nice', 'mars', '/tmp/24/96/tmp-_marsyezEKp.req']' finished
+Calling 'nice grib_to_netcdf /data/data03/scratch/21/2c/_mars-atls12-70e05f9f8ba4e9d19932f1c45a7be8d8-ihsN4X.grib -o /data/data02/scratch/d5/b7/_grib2netcdf-atls05-a82bacafb5c306db76464bc7e824bb75-CcjeAZ.nc -utime'
+2019-01-21 17:38:56 Request is active
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data03/scratch/21/2c/_mars-atls12-70e05f9f8ba4e9d19932f1c45a7be8d8-ihsN4X.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data02/scratch/d5/b7/_grib2netcdf-atls05-a82bacafb5c306db76464bc7e824bb75-CcjeAZ.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data03/scratch/21/2c/_mars-atls12-70e05f9f8ba4e9d19932f1c45a7be8d8-ihsN4X.grib', '-o', '/data/data02/scratch/d5/b7/_grib2netcdf-atls05-a82bacafb5c306db76464bc7e824bb75-CcjeAZ.nc', '-utime']' finished
+2019-01-21 17:39:01 Request is complete
+2019-01-21 17:39:01 Transfering 13.9058 Mbytes into 2019-01-17.nc
+2019-01-21 17:39:01 From https://stream.ecmwf.int/data/atls05/data/data02/scratch/d5/b7/_grib2netcdf-atls05-a82bacafb5c306db76464bc7e824bb75-CcjeAZ.nc
+2019-01-21 17:39:08 Transfer rate 2.15121 Mbytes/s
+Translating NETCDF:"2019-01-17.nc":tcwv     to 2019_01_17_tcwv.tif    
+Translating NETCDF:"2019-01-17.nc":gtco3    to 2019_01_17_gtco3.tif   
+Translating NETCDF:"2019-01-17.nc":aod550   to 2019_01_17_aod550.tif  
+Translating NETCDF:"2019-01-17.nc":duaod550 to 2019_01_17_duaod550.tif
+Translating NETCDF:"2019-01-17.nc":omaod550 to 2019_01_17_omaod550.tif
+Translating NETCDF:"2019-01-17.nc":bcaod550 to 2019_01_17_bcaod550.tif
+Translating NETCDF:"2019-01-17.nc":suaod550 to 2019_01_17_suaod550.tif
+2019-01-21 17:39:10 ECMWF API python library 1.5.0
+2019-01-21 17:39:10 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:39:10 Welcome Feng Yin
+2019-01-21 17:39:10 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:39:10 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:39:10 Request submitted
+2019-01-21 17:39:10 Request id: 5c4603bec8ca1981a6105d93
+2019-01-21 17:39:10 Request is submitted
+2019-01-21 17:39:11 Request is queued
+2019-01-21 17:39:53 Request is active
+Calling 'nice mars /tmp/4b/41/tmp-_mars9SjiD5.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.173954 - Welcome to MARS
+mars - INFO   - 20190121.173954 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.173954 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.173954 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.173954 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.173954 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.173954 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-18,type=fc,class=mcmars - INFO   - 20190121.173954 - Automatic split by date is on
+
+mars - INFO   - 20190121.173954 - Processing request 1
+mars - WARN   - 20190121.173954 - Area not compatible with grid
+mars - WARN   - 20190121.173954 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190118
+
+mars - INFO   - 20190121.173954 - Web API request id: 5c4603bec8ca1981a6105d93
+mars - INFO   - 20190121.173954 - Requesting 63 fields
+mars - INFO   - 20190121.173954 - Calling mars on 'marser', callback on 46051
+mars - INFO   - 20190121.173954 - Server task is 103 [marser]
+mars - INFO   - 20190121.173954 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr05 [marser]
+mars - INFO   - 20190121.173954 - Transfering 62806356 bytes
+mars - INFO   - 20190121.173957 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.173957 - 63 fields have been interpolated
+mars - INFO   - 20190121.173957 - Request time:  wall: 3 sec  cpu: 2 sec
+mars - INFO   - 20190121.173957 -   Read from network: 59.90 Mbyte(s) in < 1 sec [103.15 Mbyte/sec]
+mars - INFO   - 20190121.173957 -   Visiting marser: wall: 3 sec
+mars - INFO   - 20190121.173957 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.173957 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [447.12 Mbyte/sec]
+mars - INFO   - 20190121.173957 - Memory used: 50.16 Mbyte(s)
+mars - INFO   - 20190121.173957 - No errors reported
+Process '['nice', 'mars', '/tmp/4b/41/tmp-_mars9SjiD5.req']' finished
+Calling 'nice grib_to_netcdf /data/data04/scratch/ae/34/_mars-atls04-a562cefde8a29a7288fa0b8b7f9413f7-0lxU3q.grib -o /data/data04/scratch/6c/4e/_grib2netcdf-atls04-a562cefde8a29a7288fa0b8b7f9413f7-Zj7gv5.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data04/scratch/ae/34/_mars-atls04-a562cefde8a29a7288fa0b8b7f9413f7-0lxU3q.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data04/scratch/6c/4e/_grib2netcdf-atls04-a562cefde8a29a7288fa0b8b7f9413f7-Zj7gv5.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data04/scratch/ae/34/_mars-atls04-a562cefde8a29a7288fa0b8b7f9413f7-0lxU3q.grib', '-o', '/data/data04/scratch/6c/4e/_grib2netcdf-atls04-a562cefde8a29a7288fa0b8b7f9413f7-Zj7gv5.nc', '-utime']' finished
+2019-01-21 17:39:58 Request is complete
+2019-01-21 17:39:58 Transfering 13.9058 Mbytes into 2019-01-18.nc
+2019-01-21 17:39:58 From https://stream.ecmwf.int/data/atls04/data/data04/scratch/6c/4e/_grib2netcdf-atls04-a562cefde8a29a7288fa0b8b7f9413f7-Zj7gv5.nc
+2019-01-21 17:40:02 Transfer rate 3.82545 Mbytes/s
+Translating NETCDF:"2019-01-18.nc":tcwv     to 2019_01_18_tcwv.tif    
+Translating NETCDF:"2019-01-18.nc":gtco3    to 2019_01_18_gtco3.tif   
+Translating NETCDF:"2019-01-18.nc":aod550   to 2019_01_18_aod550.tif  
+Translating NETCDF:"2019-01-18.nc":duaod550 to 2019_01_18_duaod550.tif
+Translating NETCDF:"2019-01-18.nc":omaod550 to 2019_01_18_omaod550.tif
+Translating NETCDF:"2019-01-18.nc":bcaod550 to 2019_01_18_bcaod550.tif
+Translating NETCDF:"2019-01-18.nc":suaod550 to 2019_01_18_suaod550.tif
+2019-01-21 17:40:04 ECMWF API python library 1.5.0
+2019-01-21 17:40:04 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:40:04 Welcome Feng Yin
+2019-01-21 17:40:04 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:40:04 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:40:04 Request submitted
+2019-01-21 17:40:04 Request id: 5c4603f42fd81c2d18979d00
+2019-01-21 17:40:04 Request is submitted
+2019-01-21 17:40:05 Request is queued
+Calling 'nice mars /tmp/17/de/tmp-_mars1Jgbn_.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.174147 - Welcome to MARS
+mars - INFO   - 20190121.174147 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.174147 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.174147 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.174147 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.174147 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.174147 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-19,type=fc,class=mcmars - INFO   - 20190121.174147 - Automatic split by date is on
+
+mars - INFO   - 20190121.174147 - Processing request 1
+mars - WARN   - 20190121.174147 - Area not compatible with grid
+mars - WARN   - 20190121.174147 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190119
+
+mars - INFO   - 20190121.174147 - Web API request id: 5c4603f42fd81c2d18979d00
+mars - INFO   - 20190121.174147 - Requesting 63 fields
+mars - INFO   - 20190121.174147 - Calling mars on 'marser', callback on 56299
+mars - INFO   - 20190121.174147 - Server task is 797 [marser]
+mars - INFO   - 20190121.174147 - Request cost: 63 fields, 59.8968 Mbytes online, nodes: mvr04 [marser]
+mars - INFO   - 20190121.174147 - Transfering 62806356 bytes
+mars - INFO   - 20190121.174150 - 63 fields retrieved from 'marser'
+mars - INFO   - 20190121.174150 - 63 fields have been interpolated
+mars - INFO   - 20190121.174150 - Request time:  wall: 3 sec  cpu: 2 sec
+mars - INFO   - 20190121.174150 -   Read from network: 59.90 Mbyte(s) in < 1 sec [103.23 Mbyte/sec]
+mars - INFO   - 20190121.174150 -   Visiting marser: wall: 3 sec
+mars - INFO   - 20190121.174150 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20190121.174150 -   Writing to target file: 19.86 Mbyte(s) in < 1 sec [639.11 Mbyte/sec]
+mars - INFO   - 20190121.174150 - Memory used: 50.17 Mbyte(s)
+mars - INFO   - 20190121.174150 - No errors reported
+Process '['nice', 'mars', '/tmp/17/de/tmp-_mars1Jgbn_.req']' finished
+Calling 'nice grib_to_netcdf /data/data03/scratch/28/02/_mars-atls06-98f536083ae965b31b0d04811be6f4c6-b6i4cB.grib -o /data/data05/scratch/c8/91/_grib2netcdf-atls06-70e05f9f8ba4e9d19932f1c45a7be8d8-5pBKAI.nc -utime'
+grib_to_netcdf: Version 2.10.0
+grib_to_netcdf: Processing input file '/data/data03/scratch/28/02/_mars-atls06-98f536083ae965b31b0d04811be6f4c6-b6i4cB.grib'.
+grib_to_netcdf: Found 63 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netCDF file '/data/data05/scratch/c8/91/_grib2netcdf-atls06-70e05f9f8ba4e9d19932f1c45a7be8d8-5pBKAI.nc'
+grib_to_netcdf: NetCDF library version: 4.4.1.1 of Mar 14 2018 13:48:26 $
+grib_to_netcdf: Creating large (64 bit) file format.
+grib_to_netcdf: Defining variable 'tcwv'.
+grib_to_netcdf: Defining variable 'gtco3'.
+grib_to_netcdf: Defining variable 'aod550'.
+grib_to_netcdf: Defining variable 'duaod550'.
+grib_to_netcdf: Defining variable 'omaod550'.
+grib_to_netcdf: Defining variable 'bcaod550'.
+grib_to_netcdf: Defining variable 'suaod550'.
+grib_to_netcdf: Done.
+Process '['nice', 'grib_to_netcdf', '/data/data03/scratch/28/02/_mars-atls06-98f536083ae965b31b0d04811be6f4c6-b6i4cB.grib', '-o', '/data/data05/scratch/c8/91/_grib2netcdf-atls06-70e05f9f8ba4e9d19932f1c45a7be8d8-5pBKAI.nc', '-utime']' finished
+2019-01-21 17:41:52 Request is complete
+2019-01-21 17:41:52 Transfering 13.9058 Mbytes into 2019-01-19.nc
+2019-01-21 17:41:52 From https://stream.ecmwf.int/data/atls06/data/data05/scratch/c8/91/_grib2netcdf-atls06-70e05f9f8ba4e9d19932f1c45a7be8d8-5pBKAI.nc
+2019-01-21 17:42:02 Transfer rate 1.47606 Mbytes/s
+Translating NETCDF:"2019-01-19.nc":tcwv     to 2019_01_19_tcwv.tif    
+Translating NETCDF:"2019-01-19.nc":gtco3    to 2019_01_19_gtco3.tif   
+Translating NETCDF:"2019-01-19.nc":aod550   to 2019_01_19_aod550.tif  
+Translating NETCDF:"2019-01-19.nc":duaod550 to 2019_01_19_duaod550.tif
+Translating NETCDF:"2019-01-19.nc":omaod550 to 2019_01_19_omaod550.tif
+Translating NETCDF:"2019-01-19.nc":bcaod550 to 2019_01_19_bcaod550.tif
+Translating NETCDF:"2019-01-19.nc":suaod550 to 2019_01_19_suaod550.tif
+2019-01-21 17:42:04 ECMWF API python library 1.5.0
+2019-01-21 17:42:04 ECMWF API at http://apps.ecmwf.int/v1
+2019-01-21 17:42:04 Welcome Feng Yin
+2019-01-21 17:42:04 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Web-API+Troubleshooting or contact servicedesk@ecmwf.int
+2019-01-21 17:42:04 In case of delays, please check  service activity page http://apps.ecmwf.int/webapi-activity/
+2019-01-21 17:42:04 Request submitted
+2019-01-21 17:42:04 Request id: 5c46046cc7db1cbddf4cb923
+2019-01-21 17:42:04 Request is submitted
+2019-01-21 17:42:05 Request is queued
+Calling 'nice mars /tmp/52/a3/tmp-_marsdY5TaA.req'
+mars - WARN -
+mars - WARN - From 9 February 2016 10AM (UTC) MARS uses versions of
+mars - WARN - libemos newer than 4.3.0. For more details, see
+mars - WARN - https://software.ecmwf.int/wiki/display/EMOS/Bug+fix+implemented+in+EMOSLIB+4.3.x
+mars - WARN -
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20190121.174519 - Welcome to MARS
+mars - INFO   - 20190121.174519 - MARS Client build stamp: 20181122174311
+mars - INFO   - 20190121.174519 - MARS Client version: 6.23.0
+mars - INFO   - 20190121.174519 - EMOSLIB version: 4.5.7
+mars - INFO   - 20190121.174519 - Using ecCodes version 2.9.2
+mars - INFO   - 20190121.174519 - Using odb_api version: 0.15.8 (file format version: 0.5)
+mars - INFO   - 20190121.174519 - Maximum retrieval size is 30.00 G
+retrieve,stream=oper,area=90/-180/-90/180,levtype=sfc,expver=0001,padding=0,step=0/3/6/9/12/15/18/21/24,grid=0.75/0.75,param=137.128/206.210/207.210/209.210/210.210/211.210/212.210,time=00:00:00,date=2019-01-20,type=fc,class=mcmars - INFO   - 20190121.174519 - Automatic split by date is on
+
+mars - INFO   - 20190121.174519 - Processing request 1
+mars - WARN   - 20190121.174519 - Area not compatible with grid
+mars - WARN   - 20190121.174519 - Area changed from 90/-180/-90/180 to 90/-180/-90/179.25
+
+RETRIEVE,
+    CLASS      = MC,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 137.128/206.210/207.210/209.210/210.210/211.210/212.210,
+    TIME       = 0000,
+    STEP       = 0/3/6/9/12/15/18/21/24,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    AREA       = 90/-180/-90/179.25,
+    GRID       = 0.75/0.75,
+    PADDING    = 0,
+    DATE       = 20190120
+
+mars - INFO   - 20190121.174519 - Web API request id: 5c46046cc7db1cbddf4cb923
+mars - ERROR  - 20190121.174519 - Request validation failed:
+mars - ERROR  - 20190121.174519 - restricted access to valid data.
+mars - ERROR  - 20190121.174519 - For more information, look at
+mars - ERROR  - 20190121.174519 - https://software.ecmwf.int/wiki/display/UDOC/MARS+access+restrictions#valid.
+mars - ERROR  - 20190121.174519 - For any queries, please, contact User Support
+sh: /usr/bin/mailx: No such file or directory
+mars - INFO   - 20190121.174519 - Memory used: 15.73 Mbyte(s)
+mars - ERROR  - 20190121.174519 - Some errors reported
+Traceback (most recent call last):
+  File "get_new.py", line 48, in <module>
+    get_one_date(this_date)
+  File "get_new.py", line 31, in get_one_date
+    "target": "%s.nc"%this_date,
+  File "/home/ucfafyi/.local/lib/python2.7/site-packages/ecmwfapi/api.py", line 520, in retrieve
+    c.execute(req, target)
+  File "/home/ucfafyi/.local/lib/python2.7/site-packages/ecmwfapi/api.py", line 463, in execute
+    self.connection.wait()
+  File "/home/ucfafyi/.local/lib/python2.7/site-packages/ecmwfapi/api.py", line 360, in wait
+    self.call(self.location, None, "GET")
+  File "/home/ucfafyi/.local/lib/python2.7/site-packages/ecmwfapi/api.py", line 140, in wrapped
+    return func(self, *args, **kwargs)
+  File "/home/ucfafyi/.local/lib/python2.7/site-packages/ecmwfapi/api.py", line 340, in call
+    raise APIException("ecmwf.API error 1: %s" % (self.last["error"],))
+ecmwfapi.api.APIException: u'ecmwf.API error 1: ERROR 3 (MARS_RESTRICTED_ACCESS_TO_VALID_DATA): restricted access to valid data.'
