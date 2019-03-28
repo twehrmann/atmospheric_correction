@@ -27,7 +27,7 @@ setup(name                          = 'SIAC',
       packages                     = ['SIAC'],
       data_files=[('SIAC/spectral_mapping', ['SIAC/spectral_mapping/TERRA_L8_spectral_mapping.txt',
                                              'SIAC/spectral_mapping/TERRA_S2A_spectral_mapping.txt',
-                                             'SIAC/spectral_mappingTERRA_S2B_spectral_mapping.txt',
-                                             'SIAC/spectral_mappingTERRA_TERRA_spectral_mapping.txt']),
+                                             'SIAC/spectral_mapping/TERRA_S2B_spectral_mapping.txt',
+                                             'SIAC/spectral_mapping/TERRA_TERRA_spectral_mapping.txt']),
 ]
       )
