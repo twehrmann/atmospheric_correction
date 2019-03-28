@@ -14,7 +14,7 @@ from SIAC.multi_process import parmap
 from os.path import expanduser
 
 home = expanduser("~")
-file_path = os.path.dirname(os.path.realpath(__file__))
+file_path = os.environ.get("EMUS_BASEDIR", os.path.dirname(os.path.realpath(__file__)))
 
 
 def SIAC_L8(l8_dir, send_back=False, mcd43=home + '/MCD43/', vrt_dir=home + '/MCD43_VRT/', aoi=None):
