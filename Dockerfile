@@ -29,15 +29,16 @@ RUN pip install --upgrade pip
 
 
 RUN apt-get install -y gdal-bin python-gdal python3-gdal
-RUN pip install numpy
+RUN python3 -m pip install numpy
 
 # manual installation of ...
-RUN pip install pycurl
+RUN python3 -m pip install pycurl
+RUN python3 -m pip install ipython
 
 ADD requirements.txt /tmp
-RUN pip install -r /tmp/requirements.txt
+RUN python3 -m pip install -r /tmp/requirements.txt
 
-RUN pip install https://github.com/multiply-org/atmospheric_correction/archive/master.zip
+RUN python3 -m pip install https://github.com/multiply-org/atmospheric_correction/archive/master.zip
 
 
 ENTRYPOINT [ "/usr/bin/tini", "--" ]
