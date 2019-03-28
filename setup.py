@@ -25,4 +25,7 @@ setup(name                          = 'SIAC',
       license                      = "GNU Affero General Public License v3.0",
       include_package_data         = True,
       packages                     = ['SIAC'],
-     )
+      data_files=[('SIAC/spectral_mapping', ['TERRA_L8_spectral_mapping.txt', 'TERRA_S2A_spectral_mapping.txt',
+                                             'TERRA_S2B_spectral_mapping.txt','TERRA_TERRA_spectral_mapping.txt']),
+]
+      )
