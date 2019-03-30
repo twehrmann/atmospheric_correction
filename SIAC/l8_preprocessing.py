@@ -10,7 +10,7 @@ def l8_pre_processing(l8_dir):
         if len(filenames) > 0:
             temp = [dirpath + '/' + i for i in filenames]
             for j in temp:
-                if 'mtl.' in j.lower():
+                if 'mtl.txt' in j.lower():
                     metafiles.append(j)
     l8_tiles = []
     for metafile in metafiles:
