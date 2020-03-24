@@ -33,22 +33,16 @@ RUN python3 -m pip install numpy
 
 # manual installation of ...
 RUN python3 -m pip install pycurl
-<<<<<<< HEAD
 RUN python3 -m pip install ipython
-
 ADD requirements.txt /tmp
 RUN python3 -m pip install -r /tmp/requirements.txt
 
 RUN python3 -m pip install https://github.com/multiply-org/atmospheric_correction/archive/master.zip
-=======
 
 
 #RUN pip install https://github.com/multiply-org/atmospheric_correction/archive/master.zip
 ADD . /tmp/SIAC
 WORKDIR /tmp/SIAC/
->>>>>>> 07e7347125ae1eeacfdc5232332be93835031d35
 
-RUN python3 -m pip install -r requirements.txt
-RUN python3 setup.py install
 
 ENTRYPOINT [ "/usr/bin/tini", "--" ]

@@ -12,9 +12,9 @@
 [![codecov](https://codecov.io/gh/MarcYin/SIAC/branch/master/graph/badge.svg?longCache=true&style=flat)](https://codecov.io/gh/MarcYin/SIAC)
 [![Coverage Status](https://coveralls.io/repos/github/MarcYin/SIAC/badge.svg?branch=master)](https://coveralls.io/github/MarcYin/SIAC?branch=master)
 [![Lisence](https://img.shields.io/pypi/l/siac.svg?longCache=true&style=flat)](https://pypi.org/project/SIAC/)
+[![DOI](https://zenodo.org/badge/117815245.svg)](https://zenodo.org/badge/latestdoi/117815245)
 
 This atmospheric correction method uses MODIS MCD43 BRDF product to get a coarse resolution simulation of earth surface. A model based on MODIS PSF is built to deal with the scale differences between MODIS and Sentinel 2 / Landsat 8. We uses the ECMWF CAMS prediction as a prior for the atmospheric states, coupling with 6S model to solve for the atmospheric parameters. We do not have topography correction and homogeneouse surface is used without considering the BRDF effects.
-
 
 ## Data needed:
 * MCD43 : 16 days before and 16 days after the Sentinel 2 / Landsat 8 sensing date
@@ -27,7 +27,7 @@ This atmospheric correction method uses MODIS MCD43 BRDF product to get a coarse
 1. Directly from github 
 
 ```bash
-pip install https://github.com/multiply-org/atmospheric_correction/archive/master.zip
+pip install https://github.com/MarcYin/SIAC/archive/master.zip
 ```
 
 
@@ -70,6 +70,10 @@ An example of correction for Landsat 5 for a more detailed demostration of the u
 A [page](http://www2.geog.ucl.ac.uk/~ucfafyi/Atmo_Cor/index.html) shows some correction samples.
 
 A [map](http://www2.geog.ucl.ac.uk/~ucfafyi/map) for comparison between TOA and BOA.
+
+## Citation:
+
+Yin, F., Lewis, P. E., Gomez-Dans, J., & Wu, Q. (2019, February 21). A sensor-invariant atmospheric correction method: application to Sentinel-2/MSI and Landsat 8/OLI. https://doi.org/10.31223/osf.io/ps957
 
 ### LICENSE
 GNU GENERAL PUBLIC LICENSE V3
